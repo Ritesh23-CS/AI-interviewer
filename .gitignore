@@ -1,0 +1,27 @@
+# Gitignore for root project
+
+# .env files (contain secrets — never commit these)
+.env
+**/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

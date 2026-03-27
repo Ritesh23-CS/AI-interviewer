@@ -9,7 +9,7 @@ export function SessionProvider({ children }) {
     role: '',
     difficulty: '',
     interviewType: '',
-    qaPairs: [],      // { question, answer } — no evaluation until batch
+    qaPairs: [],      // { question, answer, inputMode } — no evaluation until batch
     evaluations: [],  // set after batch AI evaluation
     startTime: null,
     endTime: null,
@@ -28,10 +28,11 @@ export function SessionProvider({ children }) {
   };
 
   // Store just question + answer (no evaluation yet)
-  const addAnswer = (question, answer) => {
+  // inputMode: 'voice' | 'text'
+  const addAnswer = (question, answer, inputMode = 'text') => {
     setSession(prev => ({
       ...prev,
-      qaPairs: [...prev.qaPairs, { question, answer }],
+      qaPairs: [...prev.qaPairs, { question, answer, inputMode }],
     }));
   };
 

@@ -1,4 +1,4 @@
-# AI Interview Reviewer
+# MockMaster
 
 An AI-powered mock interview web app. Answer 5 questions, get batch AI evaluation, and receive a personalised performance report.
 

@@ -205,6 +205,13 @@ export default function FinalReport() {
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-primary font-bold text-sm">Q{index + 1}</span>
+                    {/* Voice / Type badge */}
+                    <span
+                      title={qa.inputMode === 'voice' ? 'Voice answer' : 'Typed answer'}
+                      className="text-xs px-1.5 py-0.5 rounded bg-gray-700/60 text-text-muted select-none flex-shrink-0"
+                    >
+                      {qa.inputMode === 'voice' ? '🎤' : '⌨️'}
+                    </span>
                     <span className="text-sm line-clamp-1 pr-2">{qa.question}</span>
                   </div>
                   <div className="flex items-center gap-3 flex-shrink-0">

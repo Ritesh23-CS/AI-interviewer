@@ -43,7 +43,7 @@ export default function HomeScreen() {
             <Brain className="w-8 h-8 text-primary" />
           </div>
           <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400">
-            InterviewAI
+            MockMaster
           </h1>
           <p className="text-text-muted mt-2 tracking-wide text-sm font-medium uppercase">
             Practice. Improve. Get Hired.

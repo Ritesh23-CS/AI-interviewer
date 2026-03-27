@@ -7,7 +7,7 @@ from routes import interview, report
 
 load_dotenv()
 
-app = FastAPI(title="AI Interview Reviewer API")
+app = FastAPI(title="MockMaster API")
 
 # Configure CORS for React frontend
 app.add_middleware(
@@ -20,7 +20,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "AI Interview Reviewer API is running"}
+    return {"message": "MockMaster API is running"}
 
 app.include_router(interview.router, prefix="/api")
 app.include_router(report.router, prefix="/api")
